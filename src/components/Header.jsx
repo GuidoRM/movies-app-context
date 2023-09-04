@@ -5,12 +5,12 @@ const Header = () => {
 
     return (
         <>
-            <header>
-                <h1 className="underline">{user ? `Bienvenido ${user.name}!` : "¡Bienvenidos!"}</h1>
+            <header className="flex justify-between bg-zinc-900 text-white px-12 py-4">
+                <h1 className="text-3xl">{user ? `Bienvenido ${user.name}!` : "¡Bienvenidos!"}</h1>
 
                 {
                     user ?
-                        <button>Salir de la cuenta</button>
+                        <button className="rounded-full bg-sky-500 hover:bg-sky-700 px-2 py-1 text-sm">Salir de la cuenta</button>
                     :
                         <button>Iniciar sesión</button>
                 }
